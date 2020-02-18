@@ -1,6 +1,6 @@
 package basictypes.challengers;
 
-public class SwitchCaseChallenge {
+public class BreakingBadChallenger {
 
 	public static void main(String... doYourBest) {
 		int formulaNumber = 10;
