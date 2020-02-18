@@ -7,7 +7,7 @@ public class SwitchReturnExample {
 
     }
 
-    String getBeer(String barneyBeerPreference ) {
+    static String getBeerByPrice(String barneyBeerPreference ) {
         switch (barneyBeerPreference) {
             case "Duff":
                 return "Barney prefers Duff";
