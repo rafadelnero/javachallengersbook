@@ -21,6 +21,6 @@ There are at least 5 Java Challenges on each topic mentioned above which means t
 
 You are a challenger, right? What about improving your Java skills by solving the Java Challenges of the book?
 
-If you don't have the book yet, get your copy now:
+If you don't have the book yet, get your copy now in the following link:
 
 [Lean Pub Java Challengers Book](https://leanpub.com/javachallengers)
