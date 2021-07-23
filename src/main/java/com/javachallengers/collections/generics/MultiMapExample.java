@@ -11,7 +11,6 @@ public class MultiMapExample {
 
   interface MultiMap <K,V, R>  {
     R put(K k, V v);
-    Object
   }
 }
 

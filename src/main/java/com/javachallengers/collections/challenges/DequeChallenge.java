@@ -11,8 +11,6 @@ public class DequeChallenge {
     crew.push("Odo");
     crew.addLast("Scott");
 
-    Deque
-
     System.out.println(crew.remove());
     System.out.println(crew.peek());
     System.out.println(crew.pop());
