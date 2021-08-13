@@ -24,3 +24,10 @@ You are a challenger, right? What about improving your Java skills by solving th
 If you don't have the book yet, get your copy now in the following link:
 
 [Lean Pub Java Challengers Book](https://leanpub.com/javachallengers)
+
+## Running it locally
+
+- Set the `$JAVA_HOME` variable to where you installed Java 16
+    - If you are using `jenv` Set `jenv` to Java 16
+- Install maven
+- Run `mvn install`
