@@ -8,6 +8,7 @@ public class DequeLinkedList {
   public static void main(String[] args) {
     Deque<String> deque = new LinkedList<>();
     deque.push("Wolverine");
+    deque.remove("Wolverine");
     deque.push("Storm");
     deque.push("Xavier");
     deque.push("Juggernaut");  // Last-in
