@@ -11,12 +11,18 @@ public class CollectionListExample {
     list.add("Moe");
     list.add("Barney");
 
+    for (String eachCharacter : list)
+      System.out.println(eachCharacter);
+
+    for (int i = 0; i < list.size(); i++)
+      System.out.println(list.get(i));
+
+    list.forEach(e -> System.out.println(e));
+
     list.forEach(System.out::println);
 
     list.remove(0);     // By index
     list.remove("Moe"); // By object
-
-    list.forEach(System.out::println);
 
     list.set(0, "Burns");
 

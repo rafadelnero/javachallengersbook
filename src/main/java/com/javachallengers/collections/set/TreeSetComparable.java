@@ -3,7 +3,7 @@ package com.javachallengers.collections.set;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class TreeSetInAction {
+public class TreeSetComparable {
   public static void main(String... doYourBest) {
     Set<Simpson> set = new TreeSet<>();
     set.add(new Simpson("Homer "));
@@ -12,9 +12,14 @@ public class TreeSetInAction {
 
     System.out.println(set);
   }
-  static class Simpson {
+  static class Simpson implements Comparable<Simpson> {
     String name;
     public Simpson(String name) { this.name = name; }
     public String toString() { return this.name; }
+
+    @Override
+    public int compareTo(Simpson o) {
+      return this.name.compareTo(o.name);
+    }
   }
 }
