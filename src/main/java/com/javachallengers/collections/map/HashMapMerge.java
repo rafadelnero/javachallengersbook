@@ -10,12 +10,12 @@ public class HashMapMerge {
     Map<Integer, String> ffSummons = new HashMap<>();
     ffSummons.put(1, "Ifrit");
     ffSummons.put(2, "Bahamut");
-    ffSummons.put(3, "Eden");
+    ffSummons.put(3, "Knights of Round");
 
     Map<Integer, String> ffParty = new HashMap<>();
-    ffParty.put(3, "Cid");
-    ffParty.put(4, "Yuffie");
-    ffParty.put(5, "Zack");
+    ffParty.put(1, "Cid");
+    ffParty.put(2, "Yuffie");
+    ffParty.put(4, "Zack");
 
     ffSummons.forEach((k, v) ->
         ffParty.merge(k, v, (fighter, summon) -> fighter +" invokes " + summon));
