@@ -3,7 +3,7 @@ package com.javachallengers.collections.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LowerBoundGenerics {
+public class LowerUnboundedGenerics {
   public static void main(String[] args) {
     List<Number> numbers = new ArrayList<>();
     numbers.add(7.0);
