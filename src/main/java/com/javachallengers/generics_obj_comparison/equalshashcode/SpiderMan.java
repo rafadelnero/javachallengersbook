@@ -1,4 +1,4 @@
-package com.javachallengers.collections.equalshashcode;
+package com.javachallengers.generics_obj_comparison.equalshashcode;
 
 import java.util.List;
 import java.util.Objects;

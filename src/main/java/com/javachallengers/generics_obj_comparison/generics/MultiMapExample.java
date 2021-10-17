@@ -1,6 +1,4 @@
-package com.javachallengers.collections.generics;
-
-import java.util.Deque;
+package com.javachallengers.generics_obj_comparison.generics;
 
 public class MultiMapExample {
 

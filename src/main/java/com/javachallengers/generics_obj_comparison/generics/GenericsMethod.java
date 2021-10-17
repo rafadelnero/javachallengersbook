@@ -1,4 +1,6 @@
-package com.javachallengers.collections.generics;
+package com.javachallengers.generics_obj_comparison.generics;
+
+import java.util.ArrayList;
 
 public class GenericsMethod {
 

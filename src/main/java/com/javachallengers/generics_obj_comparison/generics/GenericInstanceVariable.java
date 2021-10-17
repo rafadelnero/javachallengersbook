@@ -1,4 +1,4 @@
-package com.javachallengers.collections.generics;
+package com.javachallengers.generics_obj_comparison.generics;
 
 public class GenericInstanceVariable<T>  {
 

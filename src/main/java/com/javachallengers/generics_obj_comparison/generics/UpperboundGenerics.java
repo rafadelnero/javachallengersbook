@@ -1,9 +1,10 @@
-package com.javachallengers.collections.generics;
+package com.javachallengers.generics_obj_comparison.generics;
 
 public class UpperboundGenerics {
 
   public static void main(String[] args) {
-    concatString("upperBound");
+    String upperBound = concatString("upperBound");
+    System.out.println(upperBound);
   }
 
   static <T extends String> String concatString(T t) {

@@ -1,10 +1,10 @@
-package com.javachallengers.collections.challenges;
+package com.javachallengers.generics_obj_comparison.challenges;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MiniMogGenericChallenge {
+public class MiniMogWildcardChallenge {
     public static void main(String... doYourBest) {
         List<Integer> miniMogHitDamage;
 

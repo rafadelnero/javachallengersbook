@@ -1,4 +1,4 @@
-package com.javachallengers.collections.challenges;
+package com.javachallengers.generics_obj_comparison.challenges;
 
 public class SpiderEqualChallenge {
   static int equalsCount = 0;
