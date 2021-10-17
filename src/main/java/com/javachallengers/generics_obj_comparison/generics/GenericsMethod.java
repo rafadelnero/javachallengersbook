@@ -1,7 +1,5 @@
 package com.javachallengers.generics_obj_comparison.generics;
 
-import java.util.ArrayList;
-
 public class GenericsMethod {
 
   public <T> T doSomething(T type) {
