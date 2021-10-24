@@ -10,6 +10,7 @@ public class BoratHashSetChallenge {
       borats.add(new Borat(1, "Kazakhstan"));
       borats.add(new Borat(2, "USAndA"));
       borats.add(new Borat(2, "England"));
+
       borats.forEach(b -> System.out.print(b.id + " " + b.country + " "));
     }
     static class Borat {
