@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.averagingInt;
+import static java.util.stream.Collectors.groupingBy;
+
 public class GroupingBy {
 
     class Hero {
@@ -47,7 +50,7 @@ public class GroupingBy {
                         "Spider-Man", "Spider-Man", "Spider-Man");
 
         Map<String, Long> productsCount = heroes.stream().collect(
-                        Collectors.groupingBy(String::valueOf, Collectors.counting())
+                        groupingBy(String::valueOf, Collectors.counting())
         );
 
         System.out.println(productsCount);
@@ -61,7 +64,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 8, "DC"));
 
         Map<String, Integer> sumOfFightPowerByStudio = heroes.stream().collect(
-                Collectors.groupingBy(Hero::getStudio, Collectors.summingInt(Hero::getFightPower)));
+                groupingBy(Hero::getStudio, Collectors.summingInt(Hero::getFightPower)));
 
         System.out.println(sumOfFightPowerByStudio);
     }
@@ -74,7 +77,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 8, "DC"));
 
         Map<String, Long> counting = heroes.stream().collect(
-                Collectors.groupingBy(Hero::getStudio, Collectors.counting()));
+                groupingBy(Hero::getStudio, Collectors.counting()));
 
         System.out.println(counting);
     }
@@ -87,7 +90,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 8, "DC"));
 
         Map<String, List<Hero>> groupByHero =
-                heroes.stream().collect(Collectors.groupingBy(Hero::getStudio));
+                heroes.stream().collect(groupingBy(Hero::getStudio));
 
         System.out.println(groupByHero);
     }
@@ -100,7 +103,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 8, "DC"));
 
         Map<String, List<String>> heroesNamesByStudio =
-            heroes.stream().collect(Collectors.groupingBy(Hero::getStudio,
+            heroes.stream().collect(groupingBy(Hero::getStudio,
                             Collectors.mapping(Hero::getName, Collectors.toList())
                     )
             );
@@ -116,7 +119,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 8, "DC"));
 
         Map<String, Set<String>> deduplicatedNamesByStudio =
-                heroes.stream().collect(Collectors.groupingBy(Hero::getStudio,
+                heroes.stream().collect(groupingBy(Hero::getStudio,
                                 Collectors.mapping(Hero::getName, Collectors.toSet())
                         )
                 );
@@ -132,7 +135,7 @@ public class GroupingBy {
                 new Hero("Wonder Woman", 9, "DC"));
 
         Map<String, Integer> heroesNamesByStudio = heroes.stream().collect(
-                Collectors.groupingBy(Hero::getName, Collectors.summingInt(Hero::getFightPower)));
+                groupingBy(Hero::getName, Collectors.summingInt(Hero::getFightPower)));
 
         Map<String, Integer> highestHeroesFightPower = new LinkedHashMap<>();
         heroesNamesByStudio.entrySet().stream()
@@ -140,6 +143,19 @@ public class GroupingBy {
                 .forEachOrdered(e -> highestHeroesFightPower.put(e.getKey(), e.getValue()));
 
         System.out.println(highestHeroesFightPower);
+    }
+
+    @Test
+    public void heroesAverageByGroup() {
+        List<Hero> heroes = List.of(new Hero("Batman", 10, "DC"),
+                new Hero("Iron Man", 10, "Marvel"), new Hero("Wolverine", 12, "Marvel"),
+                new Hero("Spider-Man", 9, "Marvel"), new Hero("Superman", 10, "DC"),
+                new Hero("Wonder Woman", 8, "DC"));
+
+        Map<String, Double> averagePowerByStudio = heroes.stream()
+                .collect(groupingBy(Hero::getStudio, averagingInt(Hero::getFightPower)));
+
+        System.out.println(averagePowerByStudio);
     }
 
 }
