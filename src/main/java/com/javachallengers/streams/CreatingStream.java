@@ -1,6 +1,10 @@
 package com.javachallengers.streams;
 
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.regex.Pattern;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
@@ -30,6 +34,12 @@ public class CreatingStream {
     void fromArray() {
         String[] mavericks = new String[]{"X ", "Zero ", "Axl ", "Protoman "};
         Stream<String> maverickStream = Stream.of(mavericks);
+        maverickStream.forEach(System.out::print);
+    }
+
+    void fromArrayWithArraysStream() {
+        String[] mavericks = new String[]{"X ", "Zero ", "Axl ", "Protoman "};
+        Stream<String> maverickStream = Arrays.stream(mavericks);
         maverickStream.forEach(System.out::print);
     }
 
@@ -72,5 +82,11 @@ public class CreatingStream {
     void stringStream() {
        Pattern.compile(",").splitAsStream("X, Zero, Axl, Sigma")
                .forEach(System.out::print);
+    }
+
+    @Test
+    void creatingRandomNumbersStream() {
+        new Random().ints(1,10).limit(10).
+                forEach(n -> System.out.print(n + " "));
     }
 }
