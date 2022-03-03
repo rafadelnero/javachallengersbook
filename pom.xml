@@ -64,6 +64,9 @@
                 <version>3.7.0</version>
                 <configuration>
                     <release>17</release>
+                    <source>17</source>
+                    <target>17</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,12 +1,9 @@
-package com.javachallengers.streams;
+package com.javachallengers.streams.flatmap;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+import java.util.stream.*;
 
 public class FlatMap {
 
@@ -86,10 +83,8 @@ public class FlatMap {
 
     @Test
     public void flatMapPrimitiveType() {
-        Stream<long[]> streamLongArray = Stream.of(new long[] {1, 2, 3, 4, 5, 6, 7});
-
-        LongStream longStream = streamLongArray.flatMapToLong(Arrays::stream);
-
-        longStream.forEach(System.out::print);
+        Stream<double[]> streamLongArray = Stream.of(new double[] {1.0, 1.5, 2.0});
+        DoubleStream doubleStream = streamLongArray.flatMapToDouble(Arrays::stream);
+        doubleStream.forEach(n -> System.out.print(n + " "));
     }
 }
