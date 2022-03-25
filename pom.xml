@@ -6,7 +6,13 @@
 
     <groupId>com.manning.javachallengers</groupId>
     <artifactId>javachallengersbook</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>dao-module</module>
+        <module>service-module</module>
+        <module>view-module</module>
+    </modules>
     <name>Java Challengers Book</name>
     <description>Let's go deep into the Java Challenges!</description>
 
