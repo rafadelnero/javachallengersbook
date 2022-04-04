@@ -12,6 +12,9 @@
         <module>dao-module</module>
         <module>service-module</module>
         <module>view-module</module>
+        <module>risa</module>
+        <module>vulcan</module>
+        <module>hello-module</module>
     </modules>
     <name>Java Challengers Book</name>
     <description>Let's go deep into the Java Challenges!</description>

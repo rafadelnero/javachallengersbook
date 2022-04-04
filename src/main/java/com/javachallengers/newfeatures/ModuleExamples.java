@@ -1,14 +1,13 @@
 package com.javachallengers.newfeatures;
 
-import org.junit.jupiter.api.Test;
-
 public class ModuleExamples {
 
-  @Test
-  void unnamedModule() {
+  public static void main(String[] args) {
     Module module = ModuleExamples.class.getModule();
 
-    System.out.print("Module Name: " + module.getName());
+    System.out.println("Module Object: " + module);
+    System.out.println("Module Name: " + module.getName());
     System.out.println("Module Descriptor: " + module.getDescriptor());
   }
+
 }

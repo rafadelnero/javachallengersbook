@@ -6,6 +6,7 @@ module serviceModule {
 
   requires daoModule;
   exports service;
+  opens service to viewModule;
   provides CustomerService with DukeCustomerServiceImpl,
                                 JuggyCustomerImpl;
 
