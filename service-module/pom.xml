@@ -12,7 +12,7 @@
     <artifactId>service-module</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.manning.javachallengers</groupId>
+            <groupId>com.javachallengers</groupId>
             <artifactId>dao-module</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>

@@ -12,13 +12,13 @@
     <artifactId>view-module</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.manning.javachallengers</groupId>
+            <groupId>com.javachallengers</groupId>
             <artifactId>service-module</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.manning.javachallengers</groupId>
+            <groupId>com.javachallengers</groupId>
             <artifactId>javachallengersbook</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
