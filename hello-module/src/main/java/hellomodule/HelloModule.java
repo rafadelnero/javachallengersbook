@@ -1,3 +1,5 @@
+package hellomodule;
+
 public class HelloModule {
 
   public static void main(String[] args) {

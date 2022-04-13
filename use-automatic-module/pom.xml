@@ -9,11 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dao-module</artifactId>
+    <artifactId>use-automatic-module</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>com.javachallengers</groupId>
-            <artifactId>cache-module</artifactId>
+            <artifactId>automatic-module</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

@@ -1,6 +1,6 @@
 import service.CustomerService;
-import service.DukeCustomerServiceImpl;
-import service.JuggyCustomerImpl;
+import service.impl.DukeCustomerServiceImpl;
+import service.impl.JuggyCustomerImpl;
 
 module serviceModule {
 

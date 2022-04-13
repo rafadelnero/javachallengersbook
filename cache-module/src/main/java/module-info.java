@@ -1,0 +1,5 @@
+module cacheModule {
+
+  exports cache;
+
+}

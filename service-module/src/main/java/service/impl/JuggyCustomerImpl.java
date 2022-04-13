@@ -1,4 +1,6 @@
-package service;
+package service.impl;
+
+import service.CustomerService;
 
 public class JuggyCustomerImpl implements CustomerService {
 

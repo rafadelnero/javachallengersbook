@@ -15,6 +15,9 @@
         <module>risa</module>
         <module>vulcan</module>
         <module>hello-module</module>
+        <module>cache-module</module>
+        <module>automatic-module</module>
+        <module>use-automatic-module</module>
     </modules>
     <name>Java Challengers Book</name>
     <description>Let's go deep into the Java Challenges!</description>

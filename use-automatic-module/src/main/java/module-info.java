@@ -1,0 +1,4 @@
+module useAutomaticModule {
+  requires automatic;
+}
+
