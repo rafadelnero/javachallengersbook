@@ -14,7 +14,7 @@ public class HeisenbergStartChallenge {
 
   static class Heisenberg extends Thread {
     public void run() {
-      System.out.println("I am the danger!");
+      System.out.println("I am the danger! " + Thread.currentThread().getName());
     }
   }
 }
