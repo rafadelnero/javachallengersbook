@@ -1,4 +1,4 @@
-package com.javachallengers;
+package com.javachallengers.concurrency;
 
 public class ThreadSleep {
 
