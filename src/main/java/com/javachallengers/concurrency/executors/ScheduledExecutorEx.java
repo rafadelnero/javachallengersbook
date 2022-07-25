@@ -14,7 +14,6 @@ public class ScheduledExecutorEx {
     Runnable task = () -> System.out.println(Thread.currentThread().getName());
 
     executor.schedule(task, 100, TimeUnit.MILLISECONDS);
-    executor.schedule(task, 100, TimeUnit.MILLISECONDS);
 
     executor.shutdown();
   }
