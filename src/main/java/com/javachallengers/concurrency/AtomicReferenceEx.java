@@ -3,17 +3,15 @@ package com.javachallengers.concurrency;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class AtomicReferenceEx {
-
   public static void main(String[] args) {
-    AtomicReference<Object> cache = new AtomicReference<>();
+    AtomicReference<Object> atomicReference = new AtomicReference<>();
+    String initialValue = "NoChallenger";
+    atomicReference.set(initialValue);
 
-    Object cachedValue = new Object();
-    cache.set(cachedValue);
+    System.out.println(atomicReference.get());
+    Object newValue = "JavaChallenger";
+    boolean valueUpdated = atomicReference.compareAndSet(initialValue, newValue);
 
-    Object cachedValueToUpdate = cache.get();
-
-    Object newValue = cachedValueToUpdate;
-    boolean success = cache.compareAndSet(cachedValue,cachedValueToUpdate);
+    System.out.println(atomicReference + ", " + valueUpdated);
   }
-
 }

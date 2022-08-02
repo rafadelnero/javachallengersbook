@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class ReadWriteLockEx {
 
-  private static final ReadWriteLock lock = new ReentrantReadWriteLock();
+  private static ReadWriteLock lock = new ReentrantReadWriteLock();
   private static int counter = 0;
 
   public static void main(String[] args) {
@@ -36,5 +36,4 @@ public class ReadWriteLockEx {
 
     executor.shutdown();
   }
-
 }
