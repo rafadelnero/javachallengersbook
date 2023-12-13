@@ -1,4 +1,4 @@
 module useAutomaticModule {
-  requires automatic;
+  requires automaticModule;
 }
 
