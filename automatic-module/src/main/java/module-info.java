@@ -1,0 +1,3 @@
+module automaticModule {
+  exports util;
+}
